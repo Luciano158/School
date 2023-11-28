@@ -12,21 +12,41 @@ document.addEventListener('DOMContentLoaded', function () {
     gradeDiv.style.backgroundColor = getRandomColor();
     gradeDiv.innerHTML = `
       <p style="color: white">${grade} - ${gradeValues[index]}</p>
-      <button onclick="updateTotal(${index}, 1)">+</button>
-      <button onclick="updateTotal(${index}, -1)">-</button>
     `;
+    const gradeClicks = document.createElement('div');
+    gradeClicks.className = 'grade-clicks';
+    gradeClicks.innerText = '0';
+    gradeDiv.appendChild(gradeClicks);
+
+    gradeDiv.addEventListener('click', function () {
+      updateTotal(index);
+      updateClicks(gradeClicks);
+    });
+
     gradesContainer.appendChild(gradeDiv);
   });
 });
 
-function updateTotal(index, value) {
-  total += value * gradeValues[index];
+function updateTotal(index) {
+  total += gradeValues[index];
   document.getElementById('total').innerText = total;
 }
 
-function clearTotal() {
+function clearAll() {
   total = 0;
   document.getElementById('total').innerText = total;
+
+  // Clear grade clicks
+  const gradeClicksElements = document.querySelectorAll('.grade-clicks');
+  gradeClicksElements.forEach((clicks) => {
+    clicks.innerText = '0';
+  });
+}
+
+function updateClicks(gradeClicks) {
+  let clicks = parseInt(gradeClicks.innerText, 10);
+  clicks++;
+  gradeClicks.innerText = clicks;
 }
 
 function getRandomColor() {
