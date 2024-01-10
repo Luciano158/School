@@ -1,5 +1,5 @@
-const grades = ['Grade 0000', 'Grade 000', 'Grade 00', 'Grade 0', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7'];
-const gradeValues = [932, 1131, 957, 1233, 1571, 1310, 1326, 883, 895, 1466.30,1488.90];
+const grades = ['Grade 0000', 'Grade 000', 'Grade 00', 'Grade 0', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7','Heaphones'];
+const gradeValues = [932, 1131, 957, 1233, 1571, 1310, 1326, 883, 895, 1466.30,1488.90,100];
 let total = 0;
 
 document.addEventListener('DOMContentLoaded', function () {
