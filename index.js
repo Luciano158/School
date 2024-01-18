@@ -1,4 +1,4 @@
-const grades = ['Grade 0', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7''LSEN'];
+const grades = ['Grade 0', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7','LSEN'];
 const gradeValues = [700,880,540,635,775,515,620,575,640];
 let total = 0;
 
