@@ -50,3 +50,24 @@ body {
   color: white;
   cursor: pointer;
 }
+
+/* Styles for the dropdown menu */
+#school-dropdown {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles for the school pricing section */
+#school-pricing {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #555;
+  color: white;
+  text-align: center;
+}
